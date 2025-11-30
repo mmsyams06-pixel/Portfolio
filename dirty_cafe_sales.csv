@@ -9000,11 +9000,5 @@ TXN_9400245,Salad,1,5,5,,In-store,2/24/2023,1
 TXN_5171519,Salad,3,5,15,,In-store,4/6/2023,1
 ,,,,,,,,
 ,,,,,,,,
-Label Baris,Hitung dari Transaction ID,,,"1. menghapus error, unknow, dan blank pada kolom item",,,,
-Cash,2258,,,"2. manipulasi data pada kolom quantity, price, dan total spend",,,,
-Credit Card,2273,,,"3. mereplace sel di kolom q, p, t dengan status unknown dan error dengan blank",,,,
-Digital Wallet,2291,,,"4. kolom q, p, dan t punya relasi yaitu q*p=t, namun ada banyak sel dalam kolom tersebut yang kosong. Meskipun sudah tahu relasinya tidak dimungkinkan untuk mengisi sel kosong tersebut secara manual. Maka digunakanlah  rumus berikut",,,,
-unknown,306,,,"5. mengisi kolom total spend  yang kosong dengan rumus =if(and(q<>""',p<>""""),q*p,t), ",,,,
-error,293,,,"6. mengisi kolom pricce  yang kosong dengan rumus =if(and(t<>""',q<>""""),t/q,p),",,,,
-(kosong),2579,,,"7. menghapus baris di kolom price yang bernilai 0, karena tidak mungkin harga produk tsb 0",,,,
-Total Keseluruhan,10000,,,,,,,
+Label Baris,Hitung dari Transaction ID,Cash,2258,Credit Card,2273,Digital Wallet,2291,unknown,306,error,293,(kosong),2579,Total Keseluruhan,10000,
+
